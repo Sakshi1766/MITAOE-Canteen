@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast - MITAOE Canteen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>MITAOE CANTEEN</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li class="active"><a href="breakfast.html">Breakfast</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="snacks.html">Snacks</a></li>
+                    <li><a href="drinks.html">Drinks</a></li>
+                    <li><a href="history.html">Order History</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h1>Breakfast Menu</h1>
+            <input type="text" id="search" placeholder="Search breakfast items...">
+            <section class="menu" id="breakfast-items">
+                <!-- Breakfast Items with Images -->
+                <div class="menu-item">
+                    <img src="images/poha.jpg" alt="Poha">
+                    <h3>Poha</h3>
+                    <p>₹20</p>
+                    <button onclick="addToCart('Poha', 20)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/idli.jpg" alt="Idli Sambar">
+                    <h3>Idli Sambar</h3>
+                    <p>₹40</p>
+                    <button onclick="addToCart('Idli Sambar', 40)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/paratha.jpg" alt="Aloo Paratha">
+                    <h3>Aloo Paratha</h3>
+                    <p>₹50</p>
+                    <button onclick="addToCart('Aloo Paratha', 50)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/upma.jpg" alt="Upma">
+                    <h3>Upma</h3>
+                    <p>₹30</p>
+                    <button onclick="addToCart('Upma', 30)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="images/dosa.jpg" alt="Dosa">
+                    <h3>Dosa</h3>
+                    <p>₹50</p>
+                    <button onclick="addToCart('Dosa', 50)">Add to Cart</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

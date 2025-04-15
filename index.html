@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITAOE Canteen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Left Section: QR Code -->
+        <div class="qr-section">
+            <h2>Scan to Order</h2>
+            <img src="frame.png" alt="QR Code" class="qr-code">
+            <p>Use your phone to scan & place an order!</p>
+        </div>
+
+        <!-- Right Section: Sidebar + Main Content -->
+        <div class="content-section">
+            <aside class="sidebar">
+                <h2>MITAOE CANTEEN</h2>
+                <nav>
+                    <ul>
+                        <li class="active">Dashboard</li>
+			<li><a href="breakfast.html">Breakfast</a></li>
+                        <li><a href="lunch.html">Lunch</a></li>
+                        <li><a href="snacks.html">Snacks</a></li>
+			<li><a href="drink.html">Drinks</a></li>
+                        <li>Order History</li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="content">
+                <!-- Search & Filter Bar -->
+                <header>
+                    <input type="text" id="search" placeholder="Search food...">
+                    <button class="filter-btn">Filter</button>
+                    <div class="user">👤 User</div>
+                </header>
+
+                <!-- Food Categories -->
+                <section class="categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="#breakfast"><a href="breakfast.html">Breakfast</a></button>
+                    <button class="category-btn" data-category="#lunch"><a href"lunch.html">Lunch</a></button>
+                    <button class="category-btn" data-category="#snacks"><a href="snacks.html">Snacks</a></button>
+                    <button class="category-btn" data-category="#drinks"><a href="drink.html">Drinks</a></button>
+                </section>
+
+                <!-- Menu Items -->
+                <section class="menu" id="menu-items">
+                    <!-- Food items dynamically added here -->
+                </section>
+
+                <!-- Invoice Section -->
+                <section class="invoice">
+                    <h2>Cart</h2>
+                    <ul id="cart-list"></ul>
+                    <p><strong>Total:</strong> ₹<span id="total-price">0</span></p>
+                    <button id="checkout">Place Order</button>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
